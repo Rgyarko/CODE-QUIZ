@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href=".Assests/styles.css">
+    <script defer src=".Assets/javascript/script.js"></script>
+</head>
+<body>
+    <header></header>
+    <div id="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="next-button">Next</button>
+        <div id="timer">Time: <span id="time">0</span> seconds</div>
+        <header>
+            <p id="view-high-scores">View High Scores</p>
+            <p>Time: <span id="time">0</span></p>
+          </header>
+        <main>
+            <section id="introduction">
+              <h1>Coding Quiz Challenge</h1>
+              <p>
+                 Answer the following code-related questions within the time
+                limit.Incorrect answers will penalize your
+                score/time by 15 seconds!
+              </p>
+              <button id="button__start-quiz">Start Quiz</button>
+            </section>
+        <section id="quiz" class="hidden">
+            <h1 id="question">Question</h1>
+            <div id="answers"></div>
+            <h2 id="correct-incorrect"></h2>
+          </section>
+        <section id="done" class="hidden">
+            <h1>All done!</h1>
+        <p>Your Final score is <span id="score">0</span>.</p>
+        <form id="form">
+          <label for="initials">Enter Initials: </label
+          ><input type="text" name="initials" id="initials" />
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+        </section>
+        <section id="high-scores-container">
+            <h2>High Scores</h2>
+            <ul id="high-scores-container"></ul>
+            <button id="button__go back">Go back</button>
+            <button id="button__clear-high-score">clear High Scores</button>
+            <ol id="high-scores-list"></ol>
+        </section>
+    
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
